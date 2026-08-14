@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Typing Speed Test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>⌨️ Typing Speed Test</h1>
+    <p class="subtitle">Test your typing speed and accuracy</p>
+
+    <div class="stats">
+
+        <div class="stat">
+            <h3>TIME</h3>
+            <p id="time">0s</p>
+        </div>
+
+        <div class="stat">
+            <h3>WPM</h3>
+            <p id="wpm">0</p>
+        </div>
+
+        <div class="stat">
+            <h3>ACCURACY</h3>
+            <p id="accuracy">100%</p>
+        </div>
+
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="text-box" id="textDisplay">
+        The quick brown fox jumps over the lazy dog. Typing is a useful skill that improves with regular practice. Keep your eyes on the screen and focus on accuracy before speed.
+    </div>
+
+    <textarea
+        id="typingInput"
+        placeholder="Click Start and begin typing here..."
+        disabled
+    ></textarea>
+
+    <div class="buttons">
+        <button id="startBtn">Start Test</button>
+        <button id="restartBtn">Restart</button>
+    </div>
+
+    <div class="result" id="result">
+
+        <h2>🎉 Test Completed!</h2>
+
+        <div class="result-grid">
+
+            <div class="result-item">
+                <span>Typing Speed</span>
+                <strong id="finalWpm">0 WPM</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Accuracy</span>
+                <strong id="finalAccuracy">0%</strong>
+            </div>
+
+            <div class="result-item">
+                <span>Time Taken</span>
+                <strong id="finalTime">0s</strong>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<script src="srcipt.js"></script>
+</body>
+</html>
